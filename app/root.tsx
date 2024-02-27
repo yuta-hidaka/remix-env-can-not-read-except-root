@@ -41,7 +41,12 @@ export default function App() {
             })}`,
           }}
         />
-        <Link to="/foo">Go to foo</Link>
+        <div>
+          <Link to="/foo">Go to foo via Link component</Link>
+        </div>
+        <div>
+          <a href="/foo">Go to foo directory via a tag(directory access)</a>
+        </div>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
