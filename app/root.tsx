@@ -42,10 +42,16 @@ export default function App() {
           }}
         />
         <div>
-          <Link to="/foo">Go to foo via Link component</Link>
+          <Link to="/foo-can-read-window-process">
+            Go to /foo-can-read-window-process via Link component // this will
+            got an error
+          </Link>
         </div>
         <div>
-          <a href="/foo">Go to foo directory via a tag(directory access)</a>
+          <Link to="/foo-can-not-read-window-process">
+            Go to /foo-can-not-read-window-process via Link component // this
+            will got work
+          </Link>
         </div>
         <Outlet />
         <ScrollRestoration />
